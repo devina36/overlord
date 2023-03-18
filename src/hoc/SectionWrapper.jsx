@@ -10,7 +10,7 @@ const StarWrapper = (Component, idName) =>
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
-        <span id={idName} className=" -mt-[110px] pb-[110px] block"></span>
+        <span id={idName} className=" scroll-mt-12 block"></span>
 
         <Component />
       </motion.section>

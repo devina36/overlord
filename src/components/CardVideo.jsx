@@ -10,7 +10,7 @@ const CardVideo = ({ url }) => {
     setPlay(true);
   };
   return (
-    <div className=" relative w-full h-auto">
+    <div className=" relative w-10/12 mx-auto md:w-full h-auto">
       <video
         ref={videoRef}
         onEnded={() => setPlay(false)}

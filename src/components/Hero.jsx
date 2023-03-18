@@ -12,7 +12,7 @@ const Desc = () => {
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quos saepe libero at iure consectetur
         accusantium quia sequi facilis sunt.
       </p>
-      <button className=" py-3 w-fit mx-auto md:mx-0 text-base btn-Active lg:text-xl text-black bg-accentOrange font-semibold px-10 rounded-md border-2 border-black">
+      <button className=" py-3 w-fit mx-auto md:mx-0 text-base btn-Active lg:text-xl text-white bg-main font-semibold px-10 rounded-md border-2 border-black">
         Explore Now
       </button>
     </>
@@ -31,8 +31,8 @@ const Hero = () => {
     return () => window.removeEventListener('resize', handleWindowResize);
   }, []);
   return (
-    <section className="overflow-x-hidden pb-10 bg-white">
-      <div className="flex sm:flex-row flex-col max-w-[1040px] z-0 relative w-11/12 mx-auto sm:mb-0 mt-5">
+    <section className="overflow-x-hidden  bg-slate-50 ">
+      <div className="flex sm:flex-row flex-col max-w-[1040px] z-0 relative pb-10 w-11/12 mx-auto mb-32 mt-5 ">
         <div className=" -top-5 sm:top-1/2 sm:-translate-y-1/2 absolute z-10 mt-16 sm:mt-0 w-11/12 sm:w-1/2 h-fit">
           <motion.div variants={zoomIn(1.5, 0.3)} className="absolute z-10 top-0">
             <img
@@ -44,7 +44,7 @@ const Hero = () => {
           </motion.div>
           <motion.div
             variants={fadeIn('right', 'spring', 1, 1.5)}
-            className="w-full bg-white/60 backdrop-blur  sm:px-5 py-3"
+            className="w-full bg-slate-50/60 backdrop-blur  sm:px-5 py-3"
           >
             <h1 className=" w-full font-bold text-3xl lg:text-[40px] xl:text-[42px] leading-none text-main">
               Create a
@@ -68,7 +68,7 @@ const Hero = () => {
 
           <div className=" absolute -bottom-8 -rotate-90 -right-5 ">
             <motion.img
-              variants={slideIn('up', 'tween', 1.5, 0.3)}
+              variants={fadeIn('up', 'tween', 1.5, 0.3)}
               src={zigzag2}
               alt="zigHero"
               className="w-24 sm:w-28 lg:w-40 "

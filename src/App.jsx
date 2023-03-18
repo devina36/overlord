@@ -5,20 +5,17 @@ import About from './components/About';
 import { BrowserRouter } from 'react-router-dom';
 import Tiktok from './components/Tiktok';
 import Footer from './components/Footer';
+import Star from './element/Star';
+import Menu from './components/Menu';
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Hero />
-      <div className="w-full">
-        <img src={waves} alt="waves" />
-      </div>
       <About />
-      <div>
-        <img src={waves2} alt="waves2" />
-      </div>
-
+      <Menu />
+      {/* <Star width={40} height={40} spacing={4} value={4.5} /> */}
       <Tiktok />
       <Footer />
     </BrowserRouter>

@@ -4,8 +4,8 @@ import video3 from '../assets/video/video3.mp4';
 
 const navlink = [
   { title: 'About', id: 'about' },
+  { title: 'Menu', id: 'menu' },
   { title: 'Review', id: 'review' },
-  { title: 'Facility', id: 'facility' },
   { title: 'Contact', id: 'contact' },
 ];
 
