@@ -23,3 +23,12 @@ body {
 .mask {
   mask: url(./assets/element/star.svg) no-repeat center left;
 }
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

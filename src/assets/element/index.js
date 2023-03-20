@@ -6,5 +6,6 @@ import zigzag3 from './zigzag3.svg';
 import rounded from './rounded.svg';
 import star from './star.svg';
 import dot from './dot.svg';
+import dot2 from './dot2.svg';
 
-export { comma, nut, zigzag, zigzag2, zigzag3, rounded, star, dot };
+export { comma, nut, zigzag, zigzag2, zigzag3, rounded, star, dot, dot2 };

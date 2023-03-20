@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <div className="col-span-8 grid">
           <div className="">
-            <h4 className=" font-semibold text-lg mb-5">Product</h4>
+            <h4 className=" font-semibold text-lg mb-5">Page</h4>
             <p className="text-txt leading-loose">Home</p>
             <p className="text-txt leading-loose">Menu</p>
             <p className="text-txt leading-loose">About</p>

@@ -10,10 +10,7 @@ const Tiktok = () => {
   return (
     <>
       <div className="z-0 overflow-hidden relative bg-slate-50 ">
-        <div
-          className=" z-10 flex flex-col max-w-[1040px] pt-20 pb-20
-       w-11/12 mx-auto"
-        >
+        <div className=" z-10 flex flex-col max-w-[1040px] py-20 w-11/12 mx-auto">
           <div className=" z-10 text-center text-2xl mb-10 font-semibold">
             <h3 className="">Follow Us on Tiktok</h3>
             <h3>@overlord.delight</h3>
@@ -27,11 +24,8 @@ const Tiktok = () => {
             ))}
           </div>
         </div>
-        <div className=" z-0 absolute top-10">
-          <img src={zigzag} alt="zig-tik" className="w-32" />
-        </div>
-        <div className=" z-0 absolute opacity-80  -bottom-14 right-0">
-          <img src={nut} alt="zig-tik" className="w-40" />
+        <div className=" z-0 w-1/2 max-w-[700px] absolute opacity-60 top-10 -left-1/4">
+          <img src={zigzag} alt="zig-tik" className="w-full h-auto" />
         </div>
       </div>
     </>
