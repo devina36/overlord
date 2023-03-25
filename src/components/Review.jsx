@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import React, { useRef } from 'react';
 import { HiArrowLeft, HiArrowRight } from 'react-icons/hi';
+import { reviews } from '../constant';
 import { SectionWrapper } from '../hoc';
 import { fadeIn } from '../utils/motion';
+import Star from '../element/Star';
 
 const Review = () => {
   const refScroll = useRef();
@@ -40,9 +42,21 @@ const Review = () => {
           className="grid grid-flow-col overflow-y-auto scroll-smooth overscroll-x-contain snap-x snap-mandatory gap-3 scrollbar"
           style={{ overflowX: 'scroll' }}
         >
-          <article className=" w-[280px] sm:w-[320px] py-3 px-3 h-44 sm:h-48 bg-main text-white snap-start">1</article>
-          <article className=" w-[280px] sm:w-[320px] h-44 sm:h-48 bg-main text-white snap-start">2</article>
-          <article className=" w-[280px] sm:w-[320px] h-44 sm:h-48 bg-main text-white snap-start">3</article>
+          {reviews.map((item, i) => (
+            <article
+              key={i}
+              className="flex flex-col w-[280px] sm:w-[320px] pt-2 pb-5 px-5 h-44 sm:h-48 bg-main text-white snap-start"
+            >
+              <div className="block mb-4 scale-75 -ml-8">
+                <Star width={40} height={40} spacing={4} value={item.rating} />
+              </div>
+              <span className=" text-sm mb-2"> {item.text}</span>
+              <div className="flex self-end items-center gap-3">
+                <span className="text-xs text-secondary">{item.username}</span>
+                <img src={item.img} alt={`review-img-${i}`} className="  w-[50px] h-[50px] rounded-full object-cover" />
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </div>

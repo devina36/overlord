@@ -1,5 +1,4 @@
 import React from 'react';
-import { zigzag, zigzag2, zigzag3 } from '../assets/element';
 import { food1, food2, food3, img1, img2, img3, img4, img6, img7, img8 } from '../assets/img';
 import { SectionWrapper } from '../hoc';
 import { motion } from 'framer-motion';

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import { zigzag, nut } from '../assets/element';
+import { zigzag } from '../assets/element';
 import { videos } from '../constant';
 import { SectionWrapper } from '../hoc';
 import { fadeIn } from '../utils/motion';

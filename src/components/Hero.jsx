@@ -1,18 +1,44 @@
-import { AnimatePresence, motion } from 'framer-motion';
-import React, { useEffect, useState } from 'react';
-import { dot2, rounded, zigzag2 } from '../assets/element';
+import { motion } from 'framer-motion';
+import React, { useContext, useRef } from 'react';
+import { widthContext } from '../App';
+import { dot2, zigzag2 } from '../assets/element';
 import { img4 } from '../assets/img';
 import { SectionWrapper } from '../hoc';
-import { fadeIn, slideIn, zoomIn } from '../utils/motion';
+import { fadeIn, zoomIn } from '../utils/motion';
 
 const Desc = () => {
+  const ref = useRef();
+  const width = useContext(widthContext);
+
+  const explore = () => {
+    if (width > 1023) {
+      window.scrollTo({
+        top: ref.current.offsetTop + 500,
+        behavior: 'smooth',
+      });
+    } else if (width > 767) {
+      window.scrollTo({
+        top: ref.current.offsetTop + 300,
+        behavior: 'smooth',
+      });
+    } else {
+      window.scrollTo({
+        top: ref.current.offsetTop + 175,
+        behavior: 'smooth',
+      });
+    }
+  };
   return (
     <>
       <p className=" z-10 text-black md:text-sm text-center sm:text-start lg:text-lg mt-5 sm:mt-2 mb-5">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quos saepe libero at iure consectetur
-        accusantium quia sequi facilis sunt.
+        We offer a trifecta of delicious coffee, mouthwatering food, and warm hospitality that is sure to brighten your
+        day.
       </p>
-      <button className=" py-3 w-fit mx-auto md:mx-0 text-base btn-Active lg:text-xl text-white bg-main font-semibold px-10 rounded-md border-2 border-black">
+      <button
+        ref={ref}
+        onClick={explore}
+        className=" py-3 w-fit mx-auto md:mx-0 text-base btn-Active lg:text-xl text-white bg-main font-semibold px-10 rounded-md border-2 border-black"
+      >
         Explore Now
       </button>
     </>
@@ -20,16 +46,8 @@ const Desc = () => {
 };
 
 const Hero = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const width = useContext(widthContext);
 
-  const handleWindowResize = () => {
-    setWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', handleWindowResize);
-    return () => window.removeEventListener('resize', handleWindowResize);
-  }, []);
   return (
     <section className="overflow-x-hidden  bg-slate-50 ">
       <div className="flex sm:flex-row flex-col max-w-[1040px] z-0 relative pb-10 w-11/12 mx-auto mb-32 mt-5 ">
@@ -48,7 +66,7 @@ const Hero = () => {
           >
             <h1 className=" w-full font-bold text-3xl lg:text-[40px] xl:text-[42px] leading-none text-main">
               Create a
-              <span className="mx-3 before:block before:absolute before:-inset-1 before:skew-y-3 before:bg-accentGreen relative inline-block">
+              <span className="ml-3 lg:ml-0 lg:mx-3 before:block before:absolute before:-inset-1 before:skew-y-3 before:bg-accentGreen relative inline-block">
                 <span className="font-semibold text-3xl lg:text-[40px] xl:text-[42px] text-main relative">
                   productive
                 </span>
@@ -59,14 +77,16 @@ const Hero = () => {
           </motion.div>
         </div>
         <div className=" w-full h-fit pt-[70px] sm:pt-0 sm:w-3/5 sm:ml-auto relative">
-          <motion.div variants={zoomIn(0.1, 1)}>
-            <img
-              src={img4}
-              alt="hero"
-              loading="lazy"
-              className="w-full h-auto object-contain rounded-t-full border-main border-2"
-            />
-          </motion.div>
+          <div className="w-full fit bg-main rounded-t-full">
+            <motion.div variants={zoomIn(0.1, 1)}>
+              <img
+                src={img4}
+                alt="hero"
+                loading="lazy"
+                className="w-full h-auto object-contain rounded-t-full border-main border-2"
+              />
+            </motion.div>
+          </div>
 
           <motion.div
             variants={fadeIn('up', 'tween', 1.5, 0.3)}

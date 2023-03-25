@@ -31,7 +31,6 @@ const Navbar = () => {
               <Link
                 to="/"
                 onClick={() => {
-                  // setActive('');
                   window.scrollTo(0, 0);
                 }}
               >
@@ -57,12 +56,12 @@ const Navbar = () => {
 
           <nav
             className={` w-full md:hidden bg-main pt-28 pb-5 shadow transition-all duration-200 ease-in-out absolute z-0 ${
-              open ? 'top-0  opacity-100' : '-top-full opacity-0'
+              open ? 'top-0  opacity-100' : '-top-[500px] opacity-0'
             } h-fit`}
           >
             <ul className=" z-20 w-11/12 mx-auto flex  gap-4 text-white font-semibold flex-col ">
               {navlink.map((nav) => (
-                <li key={nav.id} className=" cursor-pointer" onClick={() => setOpen(!open)}>
+                <li key={nav.id} className="w-full text-center cursor-pointer" onClick={() => setOpen(!open)}>
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}

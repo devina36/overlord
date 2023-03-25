@@ -5,22 +5,35 @@ import About from './components/About';
 import { BrowserRouter } from 'react-router-dom';
 import Tiktok from './components/Tiktok';
 import Footer from './components/Footer';
-import Star from './element/Star';
 import Menu from './components/Menu';
 import Review from './components/Review';
+import { createContext, useEffect, useState } from 'react';
+
+export const widthContext = createContext();
 
 function App() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  const handleWindowResize = () => {
+    setWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowResize);
+    return () => window.removeEventListener('resize', handleWindowResize);
+  }, []);
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Hero />
-      <About />
-      <Menu />
-      <Review />
-      {/* <Star width={40} height={40} spacing={4} value={4.5} /> */}
-      <Tiktok />
-      <Footer />
-    </BrowserRouter>
+    <widthContext.Provider value={width}>
+      <BrowserRouter>
+        <Navbar />
+        <Hero />
+        <About />
+        <Menu />
+        <Review />
+        <Tiktok />
+        <Footer />
+      </BrowserRouter>
+    </widthContext.Provider>
   );
 }
 

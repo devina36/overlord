@@ -46,4 +46,31 @@ const menu = [
   },
 ];
 
-export { navlink, videos, menu };
+const reviews = [
+  {
+    username: 'CoffeeLover123',
+    rating: 4.5,
+    text: 'The coffee here is amazing! I also love the cozy atmosphere.',
+    img: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=50&q=80',
+  },
+  {
+    username: 'LatteLover',
+    rating: 5,
+    text: 'The lattes here are top-notch, and the staff is always friendly.',
+    img: 'https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&q=80',
+  },
+  {
+    username: 'TeaDrinker',
+    rating: 3.5,
+    text: 'The tea selection is decent, but the pastries are a bit stale.',
+    img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=60&q=80',
+  },
+  {
+    username: 'TeaAddict',
+    rating: 4,
+    text: 'I love coming here for a quiet cup of tea and some reading.',
+    img: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=50&q=80',
+  },
+];
+
+export { navlink, videos, menu, reviews };
