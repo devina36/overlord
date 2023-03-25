@@ -28,19 +28,19 @@ const videos = [
 const menu = [
   {
     id: 101,
-    title: 'Cireng',
+    title: 'Cireng Rujak',
     desc: 'mixture of tapioca flour, wheat flour, and seasonings, and deep-fried until crispy',
     link: food1,
   },
   {
     id: 102,
-    title: 'Nugget',
+    title: 'Chicken Stick',
     desc: 'bite-sized piece of food that is typically made of chicken that are breaded and deep-fried',
     link: food2,
   },
   {
     id: 103,
-    title: 'Americano',
+    title: 'Coffee Butter',
     desc: 'coffee beverage that is made by adding hot water to a shot or two of espresso',
     link: food3,
   },
