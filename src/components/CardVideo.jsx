@@ -21,6 +21,7 @@ const CardVideo = ({ url }) => {
       ></video>
 
       <button
+        type="button"
         onClick={handlePlay}
         className={`${
           play ? 'opacity-0 scale-0' : 'opacity-100 scale-100'

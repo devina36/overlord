@@ -42,10 +42,10 @@ const Menu = () => {
             </motion.div>
           ))}
           <div className="absolute z-0 -bottom-20 md:bottom-0 -left-20  md:left-0">
-            <img src={dot} width="auto" height={128} alt="dot-menu" className=" h-28 md:h-32 w-auto" />
+            <img src={dot} width={128} height={128} alt="dot-menu" className=" h-28 md:h-32 w-auto" />
           </div>
           <div className="absolute z-0 -top-10 md:top-0 -right-20 md:right-0">
-            <img src={dot} width="auto" height={128} alt="dot-menu-2" className=" md:rotate-90 h-32 w-auto" />
+            <img src={dot} width={128} height={128} alt="dot-menu-2" className=" md:rotate-90 h-32 w-auto" />
           </div>
         </div>
       </div>

@@ -10,12 +10,6 @@ body {
   @apply overflow-x-hidden w-screen h-full bg-slate-50 m-0 p-0 box-border font-poppins relative;
 }
 
-#hero {
-  background-image: url('./assets/waves.svg');
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-
 .btn-Active {
   @apply transition-all ease-in-out duration-150 active:translate-x-[3px] active:translate-y-1 active:shadow-none shadow-[3px_4px_0_0_rgba(0,0,0,1)];
 }

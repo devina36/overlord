@@ -35,6 +35,7 @@ const Desc = () => {
         day.
       </p>
       <button
+        type="button"
         ref={ref}
         onClick={explore}
         className=" py-3 w-fit mx-auto md:mx-0 text-base btn-Active lg:text-xl text-white bg-main font-semibold px-10 rounded-md border-2 border-black"
@@ -56,7 +57,7 @@ const Hero = () => {
             <img
               src={dot2}
               width={160}
-              height="auto"
+              height={41}
               alt="img1"
               loading="lazy"
               className=" w-24 md::w-28 lg:w-40 -translate-y-5 sm:-translate-y-12"
@@ -68,7 +69,7 @@ const Hero = () => {
           >
             <h1 className=" w-full font-bold text-3xl lg:text-[40px] xl:text-[42px] leading-none text-main">
               Create a
-              <span className="ml-3 lg:ml-0 lg:mx-3 before:block before:absolute before:-inset-1 before:skew-y-3 before:bg-accentGreen relative inline-block">
+              <span className="ml-3 lg:mx-3 before:block before:absolute before:-inset-1 before:skew-y-3 before:bg-accentGreen relative inline-block">
                 <span className="font-semibold text-3xl lg:text-[40px] xl:text-[42px] text-main relative">
                   productive
                 </span>

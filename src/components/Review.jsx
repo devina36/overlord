@@ -25,12 +25,14 @@ const Review = () => {
       <div className=" col-span-12 sm:col-span-6 lg:col-span-7">
         <div className="flex justify-end -translate-x-2 mb-5 gap-x-5">
           <button
+            type="button"
             onClick={() => scroll(-312)}
             className=" rounded-full btn-Active bg-accentGreen border-2 border-black"
           >
             <HiArrowLeft className=" fill-main" size={20} />
           </button>
           <button
+            type="button"
             onClick={() => scroll(312)}
             className=" rounded-full btn-Active bg-accentGreen border-2 border-black "
           >

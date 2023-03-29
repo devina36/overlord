@@ -50,10 +50,10 @@ const Footer = () => {
         <div className=" max-w-[1040px] mx-auto w-11/12 flex items-center justify-between">
           <p className="text-sm text-secondary "> ©2023 Copyright overlord.delight </p>
           <div className="flex gap-5">
-            <a href="https://instagram.com/overlord.delight?igshid=YmMyMTA2M2Y=">
+            <a href="https://instagram.com/overlord.delight?igshid=YmMyMTA2M2Y=" aria-label="Instagram">
               <BsInstagram size={25} className=" fill-secondary hover:fill-white" />
             </a>
-            <a href="https://www.tiktok.com/@overlord.delight?_t=8aVEfvqY2B0&_r=1">
+            <a href="https://www.tiktok.com/@overlord.delight?_t=8aVEfvqY2B0&_r=1" aria-label="Tiktok">
               <BsTiktok size={25} className=" fill-secondary hover:fill-white" />
             </a>
           </div>

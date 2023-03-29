@@ -30,7 +30,7 @@ function App() {
           content="Overlord Delight Cafe Website, Something Delight and Tasty, Mojoroto, Kota Kediri, Jawa Timur "
           data-rh="true"
         />
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://overlord-delight.vercel.app/" />
       </Helmet>
       <BrowserRouter>
         <Navbar />

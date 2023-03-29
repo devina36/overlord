@@ -41,9 +41,10 @@ const About = () => {
             >
               {item.link.map((link, index) => (
                 <img
+                  loading="lazy"
                   src={link}
                   width={199}
-                  height="auto"
+                  height={389}
                   key={`link-${link}-${index}`}
                   alt={`link-${link}-${index}`}
                   className="border-2 lg:border-4 border-txt rounded-lg"
