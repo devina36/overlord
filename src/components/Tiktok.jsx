@@ -25,7 +25,7 @@ const Tiktok = () => {
           </div>
         </div>
         <div className=" z-0 w-1/2 max-w-[700px] absolute opacity-60 top-10 -left-1/4">
-          <img src={zigzag} alt="zig-tik" className="w-full h-auto" />
+          <img src={zigzag} width={150} height={150} alt="zig-tik" className="w-full h-auto" />
         </div>
       </div>
     </>

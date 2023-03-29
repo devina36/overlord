@@ -1,4 +1,3 @@
-import { waves, waves2 } from './assets/waves';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -8,6 +7,7 @@ import Footer from './components/Footer';
 import Menu from './components/Menu';
 import Review from './components/Review';
 import { createContext, useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 export const widthContext = createContext();
 
@@ -24,6 +24,14 @@ function App() {
   }, []);
   return (
     <widthContext.Provider value={width}>
+      <Helmet>
+        <meta
+          name="description"
+          content="Overlord Delight Cafe Website, Something Delight and Tasty, Mojoroto, Kota Kediri, Jawa Timur "
+          data-rh="true"
+        />
+        <link rel="canonical" href="/" />
+      </Helmet>
       <BrowserRouter>
         <Navbar />
         <Hero />

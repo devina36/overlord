@@ -42,6 +42,8 @@ const About = () => {
               {item.link.map((link, index) => (
                 <img
                   src={link}
+                  width={199}
+                  height="auto"
                   key={`link-${link}-${index}`}
                   alt={`link-${link}-${index}`}
                   className="border-2 lg:border-4 border-txt rounded-lg"

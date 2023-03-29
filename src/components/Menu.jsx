@@ -27,7 +27,13 @@ const Menu = () => {
               className="flex items-center flex-row gap-x-3 sm:flex-col z-10 w-full sm:w-1/3 md:max-w-[250px] h-fit even:flex-row-reverse even:sm:flex-col even:md:my-32 odd:md:self-end first:odd:self-start "
             >
               <div className=" w-1/2 sm:w-full ">
-                <img src={item.link} alt={`menu-${item.id}`} className="object-cover w-full  aspect-square" />
+                <img
+                  src={item.link}
+                  width={250}
+                  height={250}
+                  alt={`menu-${item.id}`}
+                  className="object-cover w-full  aspect-square"
+                />
               </div>
               <div className="w-1/2 sm:w-full">
                 <h4 className=" font-semibold text-xl sm:mt-5 mb-3">{item.title}</h4>
@@ -36,10 +42,10 @@ const Menu = () => {
             </motion.div>
           ))}
           <div className="absolute z-0 -bottom-20 md:bottom-0 -left-20  md:left-0">
-            <img src={dot} alt="dot-menu" className=" h-28 md:h-32 w-auto" />
+            <img src={dot} width="auto" height={128} alt="dot-menu" className=" h-28 md:h-32 w-auto" />
           </div>
           <div className="absolute z-0 -top-10 md:top-0 -right-20 md:right-0">
-            <img src={dot} alt="dot-menu-2" className=" md:rotate-90 h-32 w-auto" />
+            <img src={dot} width="auto" height={128} alt="dot-menu-2" className=" md:rotate-90 h-32 w-auto" />
           </div>
         </div>
       </div>

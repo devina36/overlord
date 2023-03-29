@@ -20,7 +20,7 @@ const Details = () => {
       <div className="col-span-12 sm:col-span-6 lg:col-span-3">
         <h4 className=" font-semibold text-lg mb-3 mb:mb-5">Office</h4>
         <p className="text-stone-700 text-sm leading-loose">Monday-Sunday</p>
-        <p className="text-stone-700 text-sm leading-loose">3PM - 2AM</p>
+        <p className="text-stone-700 text-sm leading-loose">3PM - 12AM</p>
       </div>
     </>
   );
@@ -33,7 +33,7 @@ const Footer = () => {
       <footer className="bg-slate-100 pt-20 pb-7 sm:pb-20">
         <div className=" max-w-[1040px] mx-auto w-11/12 grid grid-cols-12 gap-x-2 gap-y-6">
           <div className="col-span-12 sm:col-span-6 lg:col-span-4">
-            <img src={logo} alt="logo-footer" className=" w-24 h-24" />
+            <img src={logo} alt="logo-footer" width={112} height={112} className=" w-24 h-24" />
             <h4 className=" font-semibold text-lg">Overlord Cafe</h4>
             <h4 className=" font-semibold text-lg">Something Delight and Tasty</h4>
           </div>

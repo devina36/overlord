@@ -53,7 +53,13 @@ const Review = () => {
               <span className=" text-sm mb-2"> {item.text}</span>
               <div className="flex self-end items-center gap-3">
                 <span className="text-xs text-secondary">{item.username}</span>
-                <img src={item.img} alt={`review-img-${i}`} className="  w-[50px] h-[50px] rounded-full object-cover" />
+                <img
+                  src={item.img}
+                  width={50}
+                  height={50}
+                  alt={`review-img-${i}`}
+                  className="  w-[50px] h-[50px] rounded-full object-cover"
+                />
               </div>
             </article>
           ))}

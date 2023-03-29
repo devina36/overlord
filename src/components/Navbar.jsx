@@ -34,7 +34,7 @@ const Navbar = () => {
                   window.scrollTo(0, 0);
                 }}
               >
-                <img src={logo} alt="logo-overlord" className=" h-16 w-16  rounded-full" />
+                <img src={logo} alt="logo-overlord" width={64} height={64} className=" h-16 w-16 rounded-full" />
               </Link>
 
               <ul className="hidden md:flex gap-x-10 text-main text-lg font-semibold">

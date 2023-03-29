@@ -55,6 +55,8 @@ const Hero = () => {
           <motion.div variants={zoomIn(1.5, 0.3)} className="absolute z-10 top-0">
             <img
               src={dot2}
+              width={160}
+              height="auto"
               alt="img1"
               loading="lazy"
               className=" w-24 md::w-28 lg:w-40 -translate-y-5 sm:-translate-y-12"
@@ -81,6 +83,8 @@ const Hero = () => {
             <motion.div variants={zoomIn(0.1, 1)}>
               <img
                 src={img4}
+                width={624}
+                height={624}
                 alt="hero"
                 loading="lazy"
                 className="w-full h-auto object-contain rounded-t-full border-main border-2"
@@ -92,7 +96,7 @@ const Hero = () => {
             variants={fadeIn('up', 'tween', 1.5, 0.3)}
             className=" absolute w-1/3  bg-main/70 -my-30 backdrop-blur-md -bottom-5  md:-bottom-8  -right-5 "
           >
-            <img src={zigzag2} alt="zigHero" className="w-full h-auto -rotate-90" />
+            <img src={zigzag2} width={137} height={150} alt="zigHero" className="w-full h-auto -rotate-90" />
           </motion.div>
         </div>
         {width <= 639 && <Desc />}
