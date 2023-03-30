@@ -27,9 +27,9 @@ function App() {
       <Helmet>
         <meta
           name="description"
-          content="Overlord Delight Cafe Website, Something Delight and Tasty, Mojoroto, Kota Kediri, Jawa Timur "
+          content="Overlord Delight Cafe at Mojoroto, Kota Kediri, Jawa Timur. Create a productive and comfortable environment. Something Delight and Tasty - Office at 3PM - 12AM."
           data-rh="true"
-        />
+        ></meta>
         <link rel="canonical" href="https://overlord-delight.vercel.app/" />
       </Helmet>
       <BrowserRouter>

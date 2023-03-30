@@ -1,5 +1,5 @@
 import { food1, food2, food3 } from '../assets/img';
-import video from '../assets/video/video1.mp4';
+import video1 from '../assets/video/video1.mp4';
 import video2 from '../assets/video/video2.mp4';
 import video3 from '../assets/video/video3.mp4';
 
@@ -13,7 +13,7 @@ const navlink = [
 const videos = [
   {
     id: 1,
-    src_video: video,
+    src_video: video1,
   },
   {
     id: 2,

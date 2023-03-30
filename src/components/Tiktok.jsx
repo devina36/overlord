@@ -13,7 +13,11 @@ const Tiktok = () => {
         <div className=" z-10 flex flex-col max-w-[1040px] py-20 w-11/12 mx-auto">
           <div className=" z-10 text-center text-2xl mb-10 font-semibold">
             <h3 className="">Follow Us on Tiktok</h3>
-            <h3>@overlord.delight</h3>
+            <h3 className=" cursor-pointer">
+              <a href="https://www.tiktok.com/@overlord.delight?_t=8aVEfvqY2B0&_r=1" aria-label="Tiktok">
+                @overlord.delight
+              </a>
+            </h3>
           </div>
 
           <div className="z-10 grid grid-cols-1 md:grid-cols-3 gap-5">
